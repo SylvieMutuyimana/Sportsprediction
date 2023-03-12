@@ -17,9 +17,9 @@ html_exporter = HTMLExporter()
 def index():
     return render_template('index.html', body=body)
 
-
+app.debug = True
 
 if __name__ == '__main__':
-    app.run(debug = False,host='0.0.0.0')
+    app.run()
 
-
+    
